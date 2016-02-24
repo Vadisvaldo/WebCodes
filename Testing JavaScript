@@ -1,0 +1,34 @@
+
+<html>
+	<head>
+		<script type="text/javascript">
+		var valueThird;
+		
+		function calcula() {
+			var valueFirst = document.getElementById('valueOne').value * 1;
+			var valueSecond = document.getElementById('valueTwo').value * 1;
+			
+
+			valueThird = valueFirst + valueSecond;
+			
+			document.getElementById('textBox').value = valueThird;
+
+			return valueThird;
+		}
+
+
+		</script>
+
+	</head>
+
+	<body>
+		Calculadora
+		<input type="text" id='valueOne'/>
+		<input type="text" id='valueTwo'/>
+
+		<button onclick="calcula()">Click me</button>
+
+		<input type="text" id='textBox'/>
+
+	</body>
+</html>
